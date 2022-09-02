@@ -28,4 +28,7 @@
 | 6 | Швейцария | j | y = ctg x | Для возраста 16 лет и остальные |
 
 Узоры:
-![alt text](http://url/to/img.png)
+
+<p align="center">
+  <img src="https://github.com/ITMOPython-2022/Lab-2/blob/main/lab2patterns.png" width="480" title="Patterns">
+</p>
