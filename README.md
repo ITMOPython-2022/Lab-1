@@ -1,5 +1,5 @@
 # Lab-2
-Лабораторная работа №2
+## Лабораторная работа №2
 
 **Задание**
 
@@ -27,10 +27,11 @@
 | 9 | Финляндия | i | y = tg x | Книги до 200 рублей и дороже |
 | 6 | Швейцария | j | y = ctg x | Для возраста 16 лет и остальные |
 
-Узоры:
+**Узоры**
 
 <p align="center">
   <img src="https://github.com/ITMOPython-2022/Lab-2/blob/main/lab2patterns.png" width="480" title="Patterns">
 </p>
 
-Флаги разных стран: https://www.worldometers.info/geography/flags-of-the-world/
+Флаги разных стран: https://www.worldometers.info/geography/flags-of-the-world/  
+Об escape-последовательностях: https://docs-python.ru/tutorial/strokovye-bajtovye-literaly/escape-posledovatelnosti-python/
