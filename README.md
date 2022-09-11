@@ -33,5 +33,8 @@
   <img src="https://github.com/ITMOPython-2022/Lab-2/blob/main/lab2patterns.png" width="480" title="Patterns">
 </p>
 
+**Ссылки**
+
 Флаги разных стран: https://www.worldometers.info/geography/flags-of-the-world/  
 Об escape-последовательностях: https://docs-python.ru/tutorial/strokovye-bajtovye-literaly/escape-posledovatelnosti-python/
+Примеры: https://replit.com/talk/learn/ANSI-Escape-Codes-in-Python/22803
