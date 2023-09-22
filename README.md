@@ -37,4 +37,4 @@
 
 Флаги разных стран: https://www.worldometers.info/geography/flags-of-the-world/  
 Об escape-последовательностях: https://docs-python.ru/tutorial/strokovye-bajtovye-literaly/escape-posledovatelnosti-python/  
-Примеры: https://replit.com/talk/learn/ANSI-Escape-Codes-in-Python/22803
+Примеры: https://www.lihaoyi.com/post/BuildyourownCommandLinewithANSIescapecodes.html
