@@ -1,10 +1,23 @@
-startgap=gap=10
-f=0
-spot=f'\x1b[48;5;{1}m{" "}\x1b[0m'
+START_GAP = 10
+
+gap = 10
+flag = 0
+
+spot = f'\x1b[48;5;{1}m{" "}\x1b[0m'
+
 for i in range(11):
-    space=(startgap-gap)*2
-    if gap==0:f=1
-    st=' '*gap+spot+' '*space+spot+' '*gap
-    print(st*4)
-    if f!=1:gap-=2
-    if f==1:gap+=2
+    space = (START_GAP - gap) * 2
+    space *= ' '
+
+    if gap == 0:
+        flag = 1
+
+    empty = ' ' * gap
+    stroka = empty + spot + space + spot + empty
+
+    print(stroka * 4)
+
+    if flag != 1:
+        gap -= 2
+    else:
+        gap += 2

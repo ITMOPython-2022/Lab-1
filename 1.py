@@ -1,17 +1,22 @@
-circwidth=lenred=6
-k=2
-lenrow=56
-row=14
-for r in range(1,row+1):
-    if 4<r<=row-2 and lenred>=circwidth:
-        lenwhite=(lenrow-lenred)//2
-        white=f'\x1b[48;5;{7}m{" "*lenwhite}\x1b[0m'
-        red=f'\x1b[48;5;{1}m{" "*lenred}\x1b[0m'
-        print(white+red+white)
-        if lenred==14:
-            k-=1
-        if k==0:
-            lenred-=4
-        if lenred<circwidth*2 and k!=0:
-            lenred+=4
-    else:print(f'\x1b[48;5;{7}m{" "*lenrow}\x1b[0m')
+WIDTH = 60
+HEIGHT = 15
+CIRCLE_UP = 2
+CIRCLE_BOTTOM = 12
+CIRCLE_WIDTH = 18
+CIRCLE_CENTER = HEIGHT // 2
+
+len_red = 8
+
+for row in range(HEIGHT):
+    if CIRCLE_UP < row < CIRCLE_BOTTOM:
+        len_white = (WIDTH - len_red) // 2
+        white = f'\x1b[48;5;{7}m{" " * len_white}\x1b[0m'
+        red = f'\x1b[48;5;{1}m{" " * len_red}\x1b[0m'
+        print(white + red + white)
+        
+        if row < CIRCLE_CENTER and len_red < CIRCLE_WIDTH:
+            len_red += 4
+        elif row > CIRCLE_CENTER:
+             len_red -= 4
+    else:
+        print(f'\x1b[48;5;{7}m{" " * WIDTH}\x1b[0m')
