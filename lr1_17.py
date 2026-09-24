@@ -143,9 +143,9 @@ def draw_function_plot():
 
 
 def main():
+    animation()
     draw_flag()
     draw_pattern()
-    animation()
     numbers = read_sequence()
     draw_sequence_chart(numbers)
     draw_function_plot()
