@@ -119,18 +119,15 @@ def draw_sequence_chart(numbers):
     print()
 
 
-def build_function_plot(size=10):
+def build_function_plot(height=10, width=28):
     """Generates the first quarter of y = x / 3 as one console string."""
-    max_x = size - 1
-    max_y = max_x / 3
-    values = [x / 3 for x in range(size)]
-    scaled_values = [round(value / max_y * (size - 1)) for value in values]
-
     plot = ["5. Function y = x / 3"]
-    for y in range(size - 1, -1, -1):
+
+    for y in range(height - 1, -1, -1):
         line = ""
-        for x in range(size):
-            if scaled_values[x] == y:
+        for x in range(width):
+            graph_y = round(x / 3)
+            if graph_y == y:
                 line += f"{YELLOW}  {RESET}"
             elif x == 0 or y == 0:
                 line += f"{WHITE}  {RESET}"
@@ -140,8 +137,8 @@ def build_function_plot(size=10):
     return "\n".join(plot)
 
 
-def draw_function_plot(size=10):
-    print(build_function_plot(size))
+def draw_function_plot():
+    print(build_function_plot())
     print()
 
 
